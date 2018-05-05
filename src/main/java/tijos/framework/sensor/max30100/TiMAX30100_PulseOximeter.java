@@ -3,7 +3,7 @@ package tijos.framework.sensor.max30100;
 import java.io.IOException;
 
 import tijos.framework.devicecenter.TiI2CMaster;
-import tijos.util.logging.Logger;
+import tijos.framework.util.logging.Logger;
 
 //http://www.schwietering.com/jayduino/filtuino/
 //Low pass butterworth filter order=1 alpha1=0.1

@@ -5,7 +5,7 @@ package tijos.framework.sensor.max30100;
 import java.io.IOException;
 import java.util.ArrayDeque;
 import tijos.framework.devicecenter.TiI2CMaster;
-import tijos.util.BigBitConverter;
+import tijos.framework.util.BigBitConverter;
 
 /* TiJOS-MAX30100 oximetry / heart rate integrated sensor library
  * Based on original C library from Ardino by oxullo  
@@ -183,7 +183,7 @@ public class TiMAX30100 {
 	 */
 	public void initialize() throws IOException {
 
-		this.i2cmObj.setBaudRate(400);
+		this.i2cmObj.setWorkBaudrate(400);
 		
 		int partId = getPartId();
 		
@@ -441,7 +441,6 @@ public class TiMAX30100 {
 		}
 		
 		if (toRead > 0) {
-						
 			this.i2cmObj.read(this.i2cSlaveAddr, TiMAX30100Regsiters.MAX30100_REG_FIFO_DATA, buffer, 0, 4 * toRead);
 
 			for (int i = 0; i < toRead; i++) {

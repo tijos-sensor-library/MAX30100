@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import tijos.framework.devicecenter.TiI2CMaster;
 import tijos.framework.sensor.max30100.TiMAX30100_PulseOximeter;
+import tijos.framework.util.Delay;
 
 public class TiMAX30100_PulseOximeterSample {
 
@@ -23,6 +24,7 @@ public class TiMAX30100_PulseOximeterSample {
 		
 			e.printStackTrace();
 		}
+		
 		
 		TiMAX30100_PulseOximeter pox = new TiMAX30100_PulseOximeter(i2c0);
 
