@@ -21,7 +21,7 @@
 		  <configuration>   
 		  <classpathContainers>
 			<classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
-			<classpathContainer>net.tijos.dev.sdk.TIJOS_FRAMEWORK/TiJOS Runtime Library 2.0</classpathContainer>
+			<classpathContainer>net.tijos.dev.sdk.TIJOS_FRAMEWORK/TiJOS Runtime Library 3.0</classpathContainer>
 		  </classpathContainers>
 							
 		   <additionalConfig>   
